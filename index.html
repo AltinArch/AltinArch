@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALTAN NEXUS — Architectural Vision</title>
+  <meta name="description" content="ALTAN NEXUS – A visionary architectural project redefining urban living along the Vardar River." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════ PRELOADER -->
+  <div id="preloader">
+    <div class="pre-inner">
+      <span class="pre-logo">AN</span>
+      <div class="pre-line"></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+
+  <!-- ═══════════════════════════════════════════════ NAVIGATION -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-mark">AN</span>
+      <span class="brand-name" data-i18n="brand">ALTAN NEXUS</span>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#hero"     data-i18n="nav_home">Home</a></li>
+      <li><a href="#vision"   data-i18n="nav_vision">Vision</a></li>
+      <li><a href="#masterplan" data-i18n="nav_master">Masterplan</a></li>
+      <li><a href="#architecture" data-i18n="nav_arch">Architecture</a></li>
+      <li><a href="#interior" data-i18n="nav_int">Interior</a></li>
+      <li><a href="#digital"  data-i18n="nav_dig">Digital</a></li>
+      <li><a href="#landscape" data-i18n="nav_land">Landscape</a></li>
+      <li><a href="#threed"   data-i18n="nav_3d">3D Experience</a></li>
+      <li><a href="#contact"  data-i18n="nav_contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <!-- Language switcher -->
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="sq">SQ</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="mk">МК</button>
+      </div>
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero"         data-i18n="nav_home">Home</a></li>
+      <li><a href="#vision"       data-i18n="nav_vision">Vision</a></li>
+      <li><a href="#masterplan"   data-i18n="nav_master">Masterplan</a></li>
+      <li><a href="#architecture" data-i18n="nav_arch">Architecture</a></li>
+      <li><a href="#interior"     data-i18n="nav_int">Interior</a></li>
+      <li><a href="#digital"      data-i18n="nav_dig">Digital</a></li>
+      <li><a href="#landscape"    data-i18n="nav_land">Landscape</a></li>
+      <li><a href="#threed"       data-i18n="nav_3d">3D Experience</a></li>
+      <li><a href="#contact"      data-i18n="nav_contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ HERO -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" id="heroBg">
+      <!-- Placeholder architectural image via gradient -->
+      <div class="hero-img-placeholder"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up" data-i18n="hero_eyebrow">Architectural Vision Project</p>
+      <h1 class="hero-title reveal-up delay-1">
+        <span class="title-line">ALTAN</span>
+        <span class="title-line">NEXUS</span>
+      </h1>
+      <p class="hero-sub reveal-up delay-2" data-i18n="hero_sub">
+        A convergence of culture, technology,<br>and the living city.
+      </p>
+      <a href="#vision" class="hero-cta reveal-up delay-3" data-i18n="hero_cta">
+        <span>Explore the Project</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span class="scroll-line"></span>
+      <span class="scroll-text" data-i18n="scroll">Scroll</span>
+    </div>
+
+    <!-- Floating accent marks -->
+    <div class="hero-accent hero-accent--tl"></div>
+    <div class="hero-accent hero-accent--br"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ VISION -->
+  <section id="vision" class="section vision-section">
+    <div class="section-label reveal-left">01 / Vision</div>
+    <div class="vision-grid">
+      <div class="vision-text">
+        <h2 class="section-title reveal-up" data-i18n="vis_title">A New Urban Horizon</h2>
+        <div class="section-divider reveal-up delay-1"></div>
+        <p class="vision-lead reveal-up delay-2" data-i18n="vis_lead">
+          ALTAN NEXUS is conceived as a living landmark —
+          a vertical city within the city, where architecture
+          breathes alongside its inhabitants.
+        </p>
+        <p class="vision-body reveal-up delay-3" data-i18n="vis_body">
+          Rising at the confluence of the Vardar River and the historic urban fabric,
+          Altan Nexus redefines what a mixed-use development can be.
+          It is not simply a building — it is a manifesto for the 21st-century city:
+          porous, social, sustainable, and deeply rooted in its cultural context.
+        </p>
+        <p class="vision-body reveal-up delay-4" data-i18n="vis_body2">
+          Every gesture — from the sweeping riverfront promenade to the sky gardens
+          suspended between towers — is designed to blur the boundary between
+          the public realm and private life.
+        </p>
+      </div>
+      <div class="vision-media reveal-right">
+        <div class="vision-img-wrap">
+          <div class="vision-img-placeholder">
+            <div class="img-label">Vision Render</div>
+          </div>
+          <div class="vision-caption" data-i18n="vis_caption">Conceptual perspective — Altan Nexus, 2024</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats bar -->
+    <div class="stats-bar reveal-up delay-2">
+      <div class="stat">
+        <span class="stat-num" data-target="120000">0</span>
+        <span class="stat-unit">m²</span>
+        <span class="stat-label" data-i18n="stat1">Total Area</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="38">0</span>
+        <span class="stat-unit"></span>
+        <span class="stat-label" data-i18n="stat2">Floors</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="6">0</span>
+        <span class="stat-unit"></span>
+        <span class="stat-label" data-i18n="stat3">Programmes</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="2027">0</span>
+        <span class="stat-unit"></span>
+        <span class="stat-label" data-i18n="stat4">Completion</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ MASTERPLAN -->
+  <section id="masterplan" class="section masterplan-section">
+    <div class="section-label reveal-right">02 / Masterplan</div>
+    <div class="section-header centered">
+      <h2 class="section-title reveal-up" data-i18n="mp_title">The Masterplan</h2>
+      <div class="section-divider centered reveal-up delay-1"></div>
+      <p class="section-intro reveal-up delay-2" data-i18n="mp_intro">
+        A choreography of towers, plazas, and riverfront terraces
+        woven into the existing urban grain.
+      </p>
+    </div>
+
+    <div class="masterplan-grid">
+      <div class="mp-card reveal-up delay-1">
+        <div class="mp-img-placeholder">
+          <div class="img-label">Site Plan</div>
+        </div>
+        <h3 data-i18n="mp_c1">Site Organisation</h3>
+        <p data-i18n="mp_c1d">A north–south spine connects the riverfront promenade to the city centre.</p>
+      </div>
+      <div class="mp-card reveal-up delay-2">
+        <div class="mp-img-placeholder">
+          <div class="img-label">Zoning Diagram</div>
+        </div>
+        <h3 data-i18n="mp_c2">Programme Mix</h3>
+        <p data-i18n="mp_c2d">Residential, commercial, cultural, hospitality, and landscape zones.</p>
+      </div>
+      <div class="mp-card reveal-up delay-3">
+        <div class="mp-img-placeholder">
+          <div class="img-label">Section</div>
+        </div>
+        <h3 data-i18n="mp_c3">Vertical Connectivity</h3>
+        <p data-i18n="mp_c3d">Sky bridges and sky gardens link the towers at multiple levels.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ ARCHITECTURE -->
+  <section id="architecture" class="section arch-section">
+    <div class="section-label reveal-left">03 / Architecture</div>
+    <div class="section-header">
+      <h2 class="section-title reveal-up" data-i18n="arch_title">Architectural Language</h2>
+      <div class="section-divider reveal-up delay-1"></div>
+      <p class="section-intro reveal-up delay-2" data-i18n="arch_intro">
+        The facades respond to climate, light, and the human scale —
+        articulated through layered fins, woven screens, and deep loggias.
+      </p>
+    </div>
+
+    <div class="arch-gallery" id="archGallery">
+      <div class="gallery-item reveal-scale" data-index="0">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Facade Detail</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g1">North Tower — Facade Study</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-scale delay-1" data-index="1">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Aerial View</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g2">Aerial Perspective</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-scale delay-2" data-index="2">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Street Level</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g3">Street-Level Promenade</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-scale delay-3" data-index="3">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Sky Bridge</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g4">Sky Bridge at Level 22</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-scale delay-1" data-index="4">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Tower Crown</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g5">Tower Crown — Dusk</span>
+        </div>
+      </div>
+      <div class="gallery-item reveal-scale delay-2" data-index="5">
+        <div class="gallery-img-placeholder">
+          <div class="img-label">Podium</div>
+        </div>
+        <div class="gallery-hover-info">
+          <span data-i18n="arch_g6">Podium & Public Plaza</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ INTERIOR -->
+  <section id="interior" class="section interior-section">
+    <div class="section-label reveal-right">04 / Interior</div>
+    <div class="interior-split">
+      <div class="interior-text">
+        <h2 class="section-title reveal-up" data-i18n="int_title">Interior Spaces</h2>
+        <div class="section-divider reveal-up delay-1"></div>
+        <p class="section-intro reveal-up delay-2" data-i18n="int_intro">
+          Interiors are conceived as extensions of the landscape —
+          warm, layered, and attuned to natural light.
+        </p>
+        <p class="vision-body reveal-up delay-3" data-i18n="int_body">
+          Materials are sourced locally: Macedonian stone, oak, and raw concrete
+          are balanced with hand-crafted textiles and bespoke lighting.
+          Each space carries a distinct identity while remaining part of a coherent whole.
+        </p>
+        <ul class="interior-list reveal-up delay-4">
+          <li data-i18n="int_l1">Residential Lobbies</li>
+          <li data-i18n="int_l2">Sky Lounge — Level 30</li>
+          <li data-i18n="int_l3">Cultural Atrium</li>
+          <li data-i18n="int_l4">Riverfront Restaurant</li>
+          <li data-i18n="int_l5">Wellness & Spa</li>
+        </ul>
+      </div>
+      <div class="interior-grid">
+        <div class="int-img reveal-scale">
+          <div class="int-img-placeholder">
+            <div class="img-label">Lobby</div>
+          </div>
+        </div>
+        <div class="int-img reveal-scale delay-1">
+          <div class="int-img-placeholder">
+            <div class="img-label">Sky Lounge</div>
+          </div>
+        </div>
+        <div class="int-img reveal-scale delay-2">
+          <div class="int-img-placeholder">
+            <div class="img-label">Atrium</div>
+          </div>
+        </div>
+        <div class="int-img reveal-scale delay-3">
+          <div class="int-img-placeholder">
+            <div class="img-label">Restaurant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ DIGITAL EXPERIENCE -->
+  <section id="digital" class="section digital-section">
+    <div class="section-label reveal-left">05 / Digital</div>
+    <div class="digital-inner">
+      <div class="digital-text">
+        <h2 class="section-title reveal-up" data-i18n="dig_title">Digital Experience</h2>
+        <div class="section-divider reveal-up delay-1"></div>
+        <p class="section-intro reveal-up delay-2" data-i18n="dig_intro">
+          Altan Nexus extends beyond the physical — an immersive digital platform
+          lets visitors explore every corner of the project before a single brick is laid.
+        </p>
+        <p class="vision-body reveal-up delay-3" data-i18n="dig_body">
+          Using real-time 3D rendering, photogrammetry, and spatial audio,
+          the digital twin of Altan Nexus offers an unprecedented level of presence.
+          Walk the riverfront terrace at sunset. Stand in the sky lobby.
+          Feel the scale before the first foundation is poured.
+        </p>
+        <div class="feature-tags reveal-up delay-4">
+          <span class="tag" data-i18n="tag1">Real-Time 3D</span>
+          <span class="tag" data-i18n="tag2">WebGL Viewer</span>
+          <span class="tag" data-i18n="tag3">Mobile AR</span>
+          <span class="tag" data-i18n="tag4">Spatial Audio</span>
+          <span class="tag" data-i18n="tag5">VR Ready</span>
+        </div>
+      </div>
+      <div class="digital-visual reveal-scale delay-2">
+        <div class="digital-screen">
+          <div class="screen-inner">
+            <div class="screen-dot"></div>
+            <div class="screen-lines">
+              <span></span><span></span><span></span>
+            </div>
+            <p class="screen-label" data-i18n="dig_screen">Interactive 3D Platform</p>
+            <p class="screen-sub" data-i18n="dig_screen2">Coming Soon</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ LANDSCAPE & RIVERFRONT -->
+  <section id="landscape" class="section landscape-section">
+    <div class="section-label reveal-right">06 / Landscape</div>
+    <div class="landscape-hero-img">
+      <div class="landscape-img-placeholder">
+        <div class="img-label landscape-label">Vardar Riverfront — Panorama</div>
+      </div>
+      <div class="landscape-overlay"></div>
+      <div class="landscape-caption-block reveal-up delay-2">
+        <h2 class="section-title" data-i18n="land_title">Landscape & Riverfront</h2>
+        <div class="section-divider"></div>
+        <p data-i18n="land_sub">Where the city meets the river — a living edge.</p>
+      </div>
+    </div>
+    <div class="landscape-text-row">
+      <div class="lt-col reveal-up delay-1">
+        <h3 data-i18n="land_c1">The Vardar Connection</h3>
+        <p data-i18n="land_c1d">
+          The entire riverfront is activated with terraces, markets,
+          cultural pavilions, and a continuous pedestrian promenade
+          stretching 400 metres along the water's edge.
+        </p>
+      </div>
+      <div class="lt-col reveal-up delay-2">
+        <h3 data-i18n="land_c2">Ecology & Biodiversity</h3>
+        <p data-i18n="land_c2d">
+          Native riparian planting, pollinator gardens, and constructed wetlands
+          return ecological function to an historically degraded riverbank.
+        </p>
+      </div>
+      <div class="lt-col reveal-up delay-3">
+        <h3 data-i18n="land_c3">Sky Gardens</h3>
+        <p data-i18n="land_c3d">
+          Suspended between the towers, the sky gardens bring the landscape
+          vertically through the building — connecting residents with nature at height.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ 3D EXPERIENCE -->
+  <section id="threed" class="section threed-section">
+    <div class="section-label reveal-left">07 / 3D</div>
+    <div class="section-header centered">
+      <h2 class="section-title reveal-up" data-i18n="3d_title">Interactive 3D Viewer</h2>
+      <div class="section-divider centered reveal-up delay-1"></div>
+      <p class="section-intro reveal-up delay-2" data-i18n="3d_intro">
+        Explore the full spatial experience of Altan Nexus in real time.
+      </p>
+    </div>
+
+    <div class="threed-viewport reveal-up delay-2">
+      <div class="viewport-inner">
+        <div class="viewport-frame">
+          <div class="vp-corner vp-tl"></div>
+          <div class="vp-corner vp-tr"></div>
+          <div class="vp-corner vp-bl"></div>
+          <div class="vp-corner vp-br"></div>
+          <div class="vp-content">
+            <div class="vp-pulse"></div>
+            <p class="vp-label" data-i18n="3d_label">3D Viewer</p>
+            <p class="vp-sub" data-i18n="3d_sub">WebGL experience loading soon</p>
+            <p class="vp-note" data-i18n="3d_note">Place your WebGL / Three.js / Spline embed here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="threed-controls reveal-up delay-3">
+      <div class="ctrl-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        <span data-i18n="ctrl1">Orbit</span>
+      </div>
+      <div class="ctrl-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+        <span data-i18n="ctrl2">Zoom</span>
+      </div>
+      <div class="ctrl-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+        <span data-i18n="ctrl3">Pan</span>
+      </div>
+      <div class="ctrl-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/></svg>
+        <span data-i18n="ctrl4">Fullscreen</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ QR EXPERIENCE -->
+  <section id="qr" class="section qr-section">
+    <div class="section-label reveal-right">08 / Mobile</div>
+    <div class="qr-inner">
+      <div class="qr-text">
+        <h2 class="section-title reveal-up" data-i18n="qr_title">QR Experience</h2>
+        <div class="section-divider reveal-up delay-1"></div>
+        <p class="section-intro reveal-up delay-2" data-i18n="qr_intro">
+          Point your phone at any QR code in the exhibition
+          to unlock an augmented-reality layer of the building.
+        </p>
+        <p class="vision-body reveal-up delay-3" data-i18n="qr_body">
+          Walk through the physical model while the digital twin
+          overlays structural information, material specs, and
+          environmental performance data — all in real time.
+        </p>
+        <ul class="qr-steps reveal-up delay-4">
+          <li>
+            <span class="step-num">01</span>
+            <span data-i18n="qr_s1">Open your camera app</span>
+          </li>
+          <li>
+            <span class="step-num">02</span>
+            <span data-i18n="qr_s2">Scan any project QR code</span>
+          </li>
+          <li>
+            <span class="step-num">03</span>
+            <span data-i18n="qr_s3">Explore in augmented reality</span>
+          </li>
+        </ul>
+      </div>
+      <div class="qr-visual reveal-scale delay-2">
+        <div class="qr-box">
+          <!-- SVG QR code placeholder -->
+          <svg class="qr-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <!-- Finder patterns -->
+            <rect x="10" y="10" width="60" height="60" fill="none" stroke="currentColor" stroke-width="6"/>
+            <rect x="22" y="22" width="36" height="36" fill="currentColor"/>
+            <rect x="130" y="10" width="60" height="60" fill="none" stroke="currentColor" stroke-width="6"/>
+            <rect x="142" y="22" width="36" height="36" fill="currentColor"/>
+            <rect x="10" y="130" width="60" height="60" fill="none" stroke="currentColor" stroke-width="6"/>
+            <rect x="22" y="142" width="36" height="36" fill="currentColor"/>
+            <!-- Data modules (simplified pattern) -->
+            <rect x="80" y="10"  width="10" height="10" fill="currentColor"/>
+            <rect x="100" y="10" width="10" height="10" fill="currentColor"/>
+            <rect x="110" y="10" width="10" height="10" fill="currentColor"/>
+            <rect x="80" y="30"  width="10" height="10" fill="currentColor"/>
+            <rect x="100" y="30" width="10" height="10" fill="currentColor"/>
+            <rect x="80" y="50"  width="10" height="10" fill="currentColor"/>
+            <rect x="110" y="50" width="10" height="10" fill="currentColor"/>
+            <rect x="80" y="80"  width="10" height="10" fill="currentColor"/>
+            <rect x="90" y="90"  width="10" height="10" fill="currentColor"/>
+            <rect x="110" y="80" width="10" height="10" fill="currentColor"/>
+            <rect x="80" y="100" width="10" height="10" fill="currentColor"/>
+            <rect x="100" y="100"width="10" height="10" fill="currentColor"/>
+            <rect x="80" y="120" width="10" height="10" fill="currentColor"/>
+            <rect x="100" y="120"width="10" height="10" fill="currentColor"/>
+            <rect x="110" y="120"width="10" height="10" fill="currentColor"/>
+            <rect x="130" y="80" width="10" height="10" fill="currentColor"/>
+            <rect x="150" y="80" width="10" height="10" fill="currentColor"/>
+            <rect x="170" y="80" width="10" height="10" fill="currentColor"/>
+            <rect x="130" y="100"width="10" height="10" fill="currentColor"/>
+            <rect x="160" y="100"width="10" height="10" fill="currentColor"/>
+            <rect x="130" y="110"width="10" height="10" fill="currentColor"/>
+            <rect x="150" y="110"width="10" height="10" fill="currentColor"/>
+            <rect x="170" y="110"width="10" height="10" fill="currentColor"/>
+            <rect x="140" y="120"width="10" height="10" fill="currentColor"/>
+            <rect x="170" y="130"width="10" height="10" fill="currentColor"/>
+            <rect x="130" y="150"width="10" height="10" fill="currentColor"/>
+            <rect x="150" y="150"width="10" height="10" fill="currentColor"/>
+            <rect x="170" y="150"width="10" height="10" fill="currentColor"/>
+          </svg>
+          <p class="qr-label" data-i18n="qr_scan">Scan to Explore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-label reveal-left">09 / Contact</div>
+    <div class="contact-inner">
+      <div class="contact-text">
+        <h2 class="section-title reveal-up" data-i18n="con_title">Project Information</h2>
+        <div class="section-divider reveal-up delay-1"></div>
+        <p class="section-intro reveal-up delay-2" data-i18n="con_intro">
+          Inquiries regarding the Altan Nexus project are welcome.
+          We are open to collaboration, press, and investment dialogue.
+        </p>
+      </div>
+      <div class="contact-cols">
+        <div class="con-col reveal-up delay-1">
+          <h4 data-i18n="con_c1">Project Office</h4>
+          <p>Skopje, Republic of North Macedonia</p>
+          <p>Bulevar Partizanski Odredi 00</p>
+        </div>
+        <div class="con-col reveal-up delay-2">
+          <h4 data-i18n="con_c2">Enquiries</h4>
+          <p><a href="mailto:info@altannexus.com">info@altannexus.com</a></p>
+          <p><a href="tel:+38912345678">+389 12 345 678</a></p>
+        </div>
+        <div class="con-col reveal-up delay-3">
+          <h4 data-i18n="con_c3">Project Team</h4>
+          <p data-i18n="con_c3d">Lead Architect · Structural · Landscape · Digital</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ FOOTER -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-mark">AN</span>
+        <div class="footer-brand-text">
+          <span class="footer-title">ALTAN NEXUS</span>
+          <span class="footer-subtitle" data-i18n="footer_sub">Architectural Vision Project</span>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <a href="#vision"        data-i18n="nav_vision">Vision</a>
+        <a href="#masterplan"    data-i18n="nav_master">Masterplan</a>
+        <a href="#architecture"  data-i18n="nav_arch">Architecture</a>
+        <a href="#interior"      data-i18n="nav_int">Interior</a>
+        <a href="#digital"       data-i18n="nav_dig">Digital</a>
+        <a href="#contact"       data-i18n="nav_contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="LinkedIn" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M11 10v7"/></svg>
+        </a>
+        <a href="#" aria-label="YouTube" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22.5 6.4a2.8 2.8 0 00-2-2C18.9 4 12 4 12 4s-6.9 0-8.5.4a2.8 2.8 0 00-2 2A29 29 0 001 12a29 29 0 00.5 5.6 2.8 2.8 0 002 2C5.1 20 12 20 12 20s6.9 0 8.5-.4a2.8 2.8 0 002-2A29 29 0 0023 12a29 29 0 00-.5-5.6z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_cr">© 2024 Altan Nexus. All rights reserved.</span>
+      <span class="footer-tagline" data-i18n="footer_tag">Architecture as Experience.</span>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════ LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <button class="lb-close" id="lbClose">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lb-img-wrap" id="lbImgWrap">
+      <div class="lb-img-placeholder">
+        <div class="img-label" id="lbLabel"></div>
+      </div>
+    </div>
+    <div class="lb-nav">
+      <button class="lb-prev" id="lbPrev">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="lb-next" id="lbNext">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
