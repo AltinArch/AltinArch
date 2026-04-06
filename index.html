@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-page="index">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ALTAN NEXUS — Architectural Vision</title>
+  <meta name="description" content="Altan Nexus — A visionary architectural project for Skopje."/>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet"/>
+  <style>
+    /* Index-specific overrides */
+    body { overflow: hidden; }
+    body.ready { overflow: auto; }
+  </style>
+</head>
+<body data-page="index">
+
+  <div id="preloader">
+    <span class="pre-word">AN</span>
+    <div class="pre-bar"></div>
+  </div>
+
+  <div class="grain"></div>
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="nav-logo-mark">AN</span>
+      <span class="nav-logo-name">ALTAN NEXUS</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-t="nav_home" class="active">Home</a></li>
+      <li><a href="portfolio.html" data-t="nav_pf">Portfolio</a></li>
+      <li><a href="#contact" data-t="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-sw">
+        <button class="lang-btn on" data-lang="en">EN</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="sq">AL</button>
+        <span class="lang-sep">|</span>
+        <button class="lang-btn" data-lang="mk">МК</button>
+      </div>
+      <button class="hbg" id="hbg" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mob-menu" id="mobMenu">
+    <ul>
+      <li><a href="index.html" data-t="nav_home">Home</a></li>
+      <li><a href="portfolio.html" data-t="nav_pf">Portfolio</a></li>
+      <li><a href="#contact" data-t="nav_contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="idx-hero">
+    <!-- Floating orbs -->
+    <div class="orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="orb orb-4"></div>
+    </div>
+
+    <div class="idx-hero-bg" id="heroBg">
+      <div class="ph" style="position:absolute;inset:0;height:100%;background:
+        linear-gradient(160deg,#0a1c14 0%,#0d1524 30%,#1a0d0a 60%,#0d0d0d 100%);">
+      </div>
+    </div>
+    <div class="idx-overlay"></div>
+
+    <!-- Decorative corner marks -->
+    <div class="idx-corner idx-corner-tl"></div>
+    <div class="idx-corner idx-corner-br"></div>
+
+    <div class="idx-content">
+      <p class="idx-eyebrow" data-t="idx_eye">Architectural Vision Project</p>
+      <h1 class="idx-title">
+        <span class="idx-title-line">ALTAN</span>
+        <span class="idx-title-line">NEXUS</span>
+      </h1>
+      <p class="idx-sub" data-t="idx_sub">Architecture Project</p>
+      <a href="portfolio.html" class="idx-cta">
+        <span data-t="idx_cta">Explore My Portfolio</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="idx-scroll">
+      <div class="idx-scroll-line"></div>
+      <span class="idx-scroll-txt" data-t="idx_scroll">Scroll</span>
+    </div>
+  </section>
+
+  <!-- BRIEF INTRO SECTION -->
+  <section id="intro" style="padding:var(--section-py) var(--gutter);position:relative;background:var(--surface);">
+    <div class="orbs" style="position:absolute;">
+      <div class="orb orb-2" style="opacity:.3"></div>
+    </div>
+    <div class="wrap" style="max-width:900px;">
+      <span class="sec-label rv">Architectural Vision</span>
+      <h2 class="sec-title rv d1">A Landmark<br><em>on the Vardar</em></h2>
+      <div class="sec-divider rv d2"></div>
+      <p class="sec-intro rv d3">
+        Altan Nexus is a visionary mixed-use development conceived at the intersection
+        of the Vardar River and the historic core of Skopje. Rising across thirty-eight
+        floors, the project integrates residential, cultural, commercial, and public
+        programmes into a single coherent urban gesture.
+      </p>
+      <br>
+      <p class="sec-body rv d4">
+        The project is presented across twelve distinct areas of architectural research —
+        from initial concept and site analysis through to technical documentation,
+        photorealistic renders, and interactive digital experiences.
+      </p>
+      <div style="margin-top:48px;" class="rv d5">
+        <a href="portfolio.html" class="btn">
+          <span data-t="idx_cta">Explore My Portfolio</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section style="padding:0 var(--gutter);background:var(--surface);">
+    <div class="wrap" style="border-top:1px solid var(--border);padding-top:60px;padding-bottom:80px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;">
+      <div style="text-align:center;padding:20px;border-right:1px solid var(--border);">
+        <div style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--accent);" data-count="120000">0</div>
+        <div style="font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray-soft);margin-top:8px;">m² Area</div>
+      </div>
+      <div style="text-align:center;padding:20px;border-right:1px solid var(--border);">
+        <div style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--accent);" data-count="38">0</div>
+        <div style="font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray-soft);margin-top:8px;">Floors</div>
+      </div>
+      <div style="text-align:center;padding:20px;border-right:1px solid var(--border);">
+        <div style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--accent);" data-count="12">0</div>
+        <div style="font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray-soft);margin-top:8px;">Sections</div>
+      </div>
+      <div style="text-align:center;padding:20px;">
+        <div style="font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:300;color:var(--accent);" data-count="2027">0</div>
+        <div style="font-size:.6rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gray-soft);margin-top:8px;">Completion</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="padding:var(--section-py) var(--gutter);background:var(--black);">
+    <div class="wrap">
+      <span class="sec-label rv">09 / Contact</span>
+      <h2 class="sec-title rv d1">Get in Touch</h2>
+      <div class="sec-divider rv d2"></div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:20px;" class="rv d3">
+        <div>
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">Project Office</div>
+          <p style="font-size:.85rem;color:var(--gray-soft);line-height:1.8;">Skopje, Republic of North Macedonia<br>Bulevar Partizanski Odredi 00</p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">Enquiries</div>
+          <p style="font-size:.85rem;color:var(--gray-soft);line-height:1.8;">
+            <a href="/cdn-cgi/l/email-protection#e0898e868fa0818c94818e8e85989593ce838f8d" style="transition:color .2s"><span class="__cf_email__" data-cfemail="6801060e072809041c0906060d101d1b460b0705">[email&#160;protected]</span></a><br>
+            <a href="tel:+38912345678" style="transition:color .2s">+389 12 345 678</a>
+          </p>
+        </div>
+        <div>
+          <div style="font-family:var(--font-mono);font-size:.58rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;">Project Team</div>
+          <p style="font-size:.85rem;color:var(--gray-soft);line-height:1.8;">Lead Architect · Structural<br>Landscape · Digital</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-in">
+      <div class="footer-brand nav-logo">
+        <span class="nav-logo-mark">AN</span>
+        <div>
+          <div class="nav-logo-name" style="font-size:.7rem">ALTAN NEXUS</div>
+          <div style="font-size:.58rem;letter-spacing:.18em;color:var(--gray-soft)" data-t="footer_sub">Architectural Vision Project</div>
+        </div>
+      </div>
+      <nav class="footer-nav">
+        <a href="index.html" data-t="nav_home">Home</a>
+        <a href="portfolio.html" data-t="nav_pf">Portfolio</a>
+        <a href="#contact" data-t="nav_contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a class="soc" href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a class="soc" href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4c0-1.1.9-2 2-2s2 .9 2 2v4M11 10v7"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-t="footer_cr">© 2024 Altan Nexus. All rights reserved.</span>
+      <span style="font-style:italic" data-t="footer_tag">Architecture as Experience.</span>
+    </div>
+  </footer>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min
